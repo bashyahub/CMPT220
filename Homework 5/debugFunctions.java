@@ -12,8 +12,10 @@ I give you two fully working method examples with and without parameters and cal
 */
 
 import java.util.Scanner;
-public class Main {
+public class debugFunctions {
+    
     public static void main(String[] args) {
+    
     Scanner sc = new Scanner(System.in);
 
 
@@ -43,5 +45,55 @@ public class Main {
         System.out.println("Dog");
     }
 
-  
+
+Scanner sc = new Scanner(System.in);
+System.out.println("Problem 2");
+System.out.println("Enter a number and I will tell you the fatorial: ");
+int num = sc.nextInt();
+
+printFactorial(num);
+    }
+
+public static void printFactorial(int n) {
+    int factorial = 1;
+    for (int i = 0; i < 1; i++){
+        factorial *= 1;
+    }
+System.out.println("The factorial of " + n + " is: " + factorial);
+}
+
+System.out.println("Problem 3");
+System.out.println("Enter a number and I will tell you the sum of every other number: ");
+Scanner sc = new Scanner(System.in);
+int num = sc.nextInt();
+
+printSumOfNum(num);
+}
+
+public static void printSumOfNum(int n) {
+    int sum = 0;
+
+    for (int i = 1; i <= n; i += 2) {
+        sum += i;
+    }
+System.out.println("The sum of all numbers leading up to your input is: " + sum);
+}
+
+
+System.out.println("Problem 5");
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter a sentence, and I will reverse it:");
+String sentence = sc.nextLine();
+ printReverse(sentence);
+    }
+public static void printReverse(String sentence){
+    String reverse = "";
+    for (int i = 0; i < sentence.length(); i++){
+        char ch = sentence.charAt(i);
+        reverse = ch + reverse;
+    }
+
+    System.out.println("Your reversed sentence is: " + reverse);
+
+}
 }

@@ -1,6 +1,6 @@
 import java.util.Arrays;
 //Our cheaty array helper file <3
-public class Main {
+public class ArrayDebug {
     public static void main(String[] args) {
 
         //Create me an array named "nameArray" that is a string and has 4 values in it, give me 4 names of people or animals you care about

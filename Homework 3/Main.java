@@ -36,6 +36,17 @@ public class Main {
         System.out.println("Problem 5");
         //hint
         String reverse = "";
+<<<<<<< Updated upstream
 
+=======
+        for (int i = 0; i < sentence.length(); i++){
+            ch= sentence.charAt(i);
+            reverse = ch + reverse;
+        }
+        System.out.print("Your sentence backwards is: " + reverse); 
+        
+    sc.close();
+    
+>>>>>>> Stashed changes
     }
 }
